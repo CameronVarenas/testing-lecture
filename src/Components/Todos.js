@@ -10,7 +10,7 @@ export default class Todos extends Component {
   }
 
   async componentDidMount() {
-    const { data } = await axios.get('/api/todos')
+    const {data} = await axios.get('/api/todos')
     this.setState({ todos: data })
   }
 
